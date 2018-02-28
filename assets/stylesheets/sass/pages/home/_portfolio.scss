@@ -1,0 +1,124 @@
+.portfolio {
+  text-align: center;
+
+  .title-section {
+    float: left;
+    padding: 0 10px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .portfolio-categories {
+    color: $text-dark;
+    float: left;
+    font-family: Stratum-Light;
+    font-size: 2.4em;
+    padding: 0 10px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .categories-more {
+    cursor: pointer;
+    margin: 0.5em 0 0;
+  }
+
+  .categories-options {
+    display: none;
+    margin: 0.6em 0 1.8em;
+  }
+
+  .categories-item {
+    margin: 0;
+  }
+
+  .portfolio-book {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .portfolio-big, .portfolio-medium, .portfolio-small {
+    float: left;
+    margin: 10px;
+    position: relative;
+
+    @include on-event {
+      .portfolio-shadow {
+        cursor: pointer;
+        visibility: visible;
+      }
+
+      .portfolio-info {
+        margin-left: 0;
+      }
+    }
+  }
+
+  $big-edge: calc(50% - 20px);
+  $small-edge: calc(25% - 20px);
+
+  .portfolio-big {
+    padding-bottom: $big-edge;
+    width: $big-edge;
+  }
+
+  .portfolio-medium {
+    padding-bottom: $small-edge;
+    width: $big-edge;
+  }
+
+  .portfolio-small {
+    padding-bottom: $small-edge;
+    width: $small-edge;
+  }
+
+  @for $i from 1 through 12 {
+    .portfolio-#{$i} {
+      background: url('../../images/portfolio/portfolio#{$i}.jpg') center/cover no-repeat;
+    }
+  }
+
+  .portfolio-shadow {
+    background: $polarized;
+    height: 100%;
+    left: 0;
+    padding: 5% 4%;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .portfolio-text {
+    border-left: solid 2px $white;
+    color: $white;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 14px;
+  }
+
+  .portfolio-info {
+    margin-left: -150%;
+    transition: margin 0.5s ease;
+  }
+
+  .portfolio-proyect {
+    font-family: Stratum-Light;
+    font-size: 2.8em;
+    line-height: 1em;
+    margin: 0 0 0.2em;
+    text-transform: uppercase;
+  }
+
+  .portfolio-tag {
+    font-family: Stratum-Light;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin: 0 0 0.2em;
+  }
+
+  .portfolio-more {
+    margin-top: 32px;
+  }
+}

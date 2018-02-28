@@ -1,0 +1,46 @@
+.services {
+  position: relative;
+
+  .services-contact {
+    position: absolute;
+    right: 109px;
+    top: -1.25em;
+  }
+
+  .services-wrapper {
+    margin: 34px 10px;
+  }
+
+  .services-text {
+    border-left: solid 2px $nile;
+    height: 31.25vw;
+  }
+
+  .services-center {
+    margin: 0 10px 0 30px;
+    text-transform: uppercase;
+  }
+
+  .services-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .services-item {
+    color: $text-dark;
+    font-family: $font-title;
+    font-size: 2em;
+    list-style: none;
+    margin: 1.5vw 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .services-team {
+    background: $smoke;
+    height: 31.25vw;
+    width: 57.657vw;
+  }
+}

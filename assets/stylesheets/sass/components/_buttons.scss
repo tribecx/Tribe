@@ -1,0 +1,26 @@
+.link-btn {
+  background-color: $nile;
+  color: $text-clear;
+  display: inline-block;
+  font-family: $font-title;
+  font-size: 2em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+  width: 320px;
+
+  @include on-event {
+    background: $aqua;
+  }
+
+  &.alt {
+    background-color: $aqua;
+    color: $text-dark;
+    padding: 0 2.225em;
+    width: auto;
+
+    @include on-event {
+      background: $stone;
+      color: $white;
+    }
+  }
+}

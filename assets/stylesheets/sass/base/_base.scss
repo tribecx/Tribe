@@ -17,4 +17,8 @@ html {
 
 a {
   text-decoration: none;
+
+  @include on-event {
+    text-decoration: none;
+  }
 }

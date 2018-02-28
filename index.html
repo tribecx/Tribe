@@ -4,26 +4,184 @@
     <meta charset="utf-8">
     <title>Tribe | Digital Agency</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/css/main.css">
   </head>
   <body>
-    <header>
-      <a class="header-logo" href="index.html"><img src="assets/images/icons/logo-tribe.svg" alt="Tribe Digital Agency"></a>
-      <div class="header-nav">
-        <nav>
-          <a class="header-link" href="#services">Servicios</a>
-          <a class="header-link" href="#portfolio">Portafolio</a>
-          <a class="header-link" href="we.html">Quienes somos</a>
-          <a class="header-link alt" href="#contact">Contactanos</a>
-        </nav>
-      </div>
+    <header class="header">
+      <h1 class="visually-hidden">Tribe Digital Agency</h1>
+      <a href="index.html"><img class="header-logo" src="assets/images/icons/logo-tribe.svg" alt="Tribe Digital Agency"></a>
+      <nav class="header-nav d-flex justify-content-between align-items-center">
+        <a class="header-link" href="#services">Servicios</a>
+        <a class="header-link" href="#portfolio">Portafolio</a>
+        <a class="header-link" href="we.html">Quienes somos</a>
+        <a class="header-link alt" href="#contact">Contactanos</a>
+      </nav>
     </header>
     <section class="video">
-      <video autoplay preload="auto" poster="posterimage.jpg" controls>
+      <video class="video-player" autoplay preload="auto" poster="assets/images/poster.png">
         <source src="videos/we-are.mp4" type="video/mp4">
       </video>
     </section>
-    <section class="services" id="services">
-      <a class="services-contact" href="#contact">Cuentanos sobre ti</a>
+    <section class="services section" id="services">
+      <a class="services-contact link-btn alt" href="#contact">Cuentanos sobre ti</a>
+      <div class="services-wrapper d-flex justify-content-between align-items-center">
+        <div class="services-text d-flex align-items-center">
+          <div class="services-center">
+            <h2 class="title-section">Servicios</h2>
+            <ul class="services-list">
+              <li class="services-item">Branding</li>
+              <li class="services-item">Marketing</li>
+              <li class="services-item">Diseño web</li>
+              <li class="services-item">Diseño de interfaces</li>
+              <li class="services-item">Motion graphics</li>
+              <li class="services-item">Videos corporativos</li>
+            </ul>
+          </div>
+        </div>
+        <img class="services-team" src="/" alt="Foto del equipo Tribe">
+      </div>
+    </section>
+    <section class="portfolio section">
+      <div class="portfolio-head">
+        <h2 class="title-section">Nuestro portafolio</h2>
+        <div class="portfolio-categories">
+          <p class="categories-more">+ Mostrar categorías</p>
+          <div class="categories-options">
+            <p class="categories-item"><b>Todas</b></p>
+            <p class="categories-item">Branding</p>
+            <p class="categories-item">Diseño web</p>
+            <p class="categories-item">Diseño de interfaz</p>
+            <p class="categories-item">Motion Graphics</p>
+            <p class="categories-item">Video corporativo</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-book">
+        <div class="portfolio-1 portfolio-big">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Yayaco!</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-2 portfolio-medium">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Motion graphics</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-3 portfolio-small">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Paci</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-4 portfolio-small">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">SiCarFarms</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-5 portfolio-small">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Citrojugo</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-6 portfolio-small">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Wand</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-7 portfolio-medium">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Todos los santos</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-8 portfolio-medium">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">SiCarFarms</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-9 portfolio-medium">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Empress</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-10 portfolio-big float-right">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Favu</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-11 portfolio-medium float-right">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Ocupa</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-12 portfolio-medium float-right">
+          <div class="portfolio-shadow">
+            <div class="portfolio-text">
+              <div class="portfolio-info">
+                <h3 class="portfolio-proyect">Citrojugo</h3>
+                <p class="portfolio-tag">Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="portfolio-more link-btn" href="#">Ver más proyectos</a>
+    </section>
+    <section class="blog section">
+
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

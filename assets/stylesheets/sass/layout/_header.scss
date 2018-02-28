@@ -1,0 +1,37 @@
+.header {
+  background: $nile;
+  border-top: solid 10px $aqua;
+  text-align: center;
+
+  .header-logo {
+    margin: 38px auto 25px;
+  }
+
+  .header-nav {
+    margin: 0 auto;
+    max-width: 805px;
+    padding: 0 25px;
+  }
+
+  .header-link {
+    color: $text-clear;
+    font-family: $font-title;
+    font-size: 1.8em;
+    text-transform: uppercase;
+
+    @include on-event {
+      color: $aqua;
+    }
+
+    &.alt {
+      background: $white;
+      color: $text-dark;
+      line-height: 2.111em;
+      padding: 0 0.639em;
+
+      @include on-event {
+        background: $aqua;
+      }
+    }
+  }
+}

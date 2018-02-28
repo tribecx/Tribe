@@ -21,6 +21,7 @@
 @import
   'layout/header',
   'layout/menu',
+  'layout/section',
   'layout/footer';
 
 // 5. Components
@@ -30,4 +31,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home/video';
+  'pages/home/video',
+  'pages/home/services',
+  'pages/home/portfolio',
+  'pages/home/blog';
