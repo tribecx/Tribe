@@ -1,0 +1,82 @@
+.team-section {
+  background-color: $nile;
+  
+  .team-wrapper {
+    padding: 1px;
+    
+      .content-center {
+        margin: 60px auto;
+        width: fit-content;
+        
+        .person-wrapper {
+          display: inline-block;
+          
+          &.person-wrapper-alt{
+            position: relative;
+            bottom: -50px;
+          }
+        }
+      }
+
+      .square {
+        background-size: cover;
+        display: inline-block;
+        height: 460.81px;
+        margin: 30px;
+        width: 307.01px;
+
+        &.person1 {background-image: url(../../images/team/jesus.jpg);}
+
+        &.person2 {background-image: url(../../images/team/omar.jpg);}
+
+        &.person3 {background-image: url(../../images/team/alejandro.jpg);}
+
+        &.person4 {background-image: url(../../images/team/manuel.jpg);}
+
+        &.person5 {background-image: url(../../images/team/alan.jpg);}
+
+        &.person6 {background-image: url(../../images/team/irvin.jpg);}
+      }
+      
+    .description-wrapper{
+      margin-top: -70px;
+      margin-left: 45px;
+      width: fit-content;
+          
+        .team-name {
+          color: $aqua;
+          font-family: $font-regular;
+          font-size: 6.2em;
+          line-height: 60px;
+        }
+
+        .team-occupation{
+          color: $aqua;
+          font-family: $font-regular;
+          font-size: 2.6em;
+          line-height: 30px;
+        }
+
+        .team-email{
+          color: $white;
+          font-family: $font-section;
+          font-size: 1.8em;
+          line-height: 21px;
+        }
+    }
+  }
+  
+  .hashtag-section{
+    background-color: $white;
+    text-align: center;
+    padding: 80px;
+  
+      .hashtag-subtitle{
+        color: $nile;
+        font-family: $font-regular ;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 76px;
+      }
+  }
+}

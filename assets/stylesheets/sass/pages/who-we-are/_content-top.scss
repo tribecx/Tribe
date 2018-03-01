@@ -1,0 +1,23 @@
+.content-top-section{
+  background-color: $nile;
+  color: $white;
+  
+    .content-top-wrapper{
+      padding: 50px;
+
+        .content-top-title{
+          font-family: $font-title;
+          font-size: 6em;
+          line-height: 70px;
+          max-width: 760px;
+        }
+
+        .content-top-subtitle{
+          color: $smoke;
+          font-family: OpenSans-Regular;
+          font-size: 1.8em;
+          line-height: 26px;
+          max-width: 848px;
+        }  
+    }
+}
