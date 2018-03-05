@@ -58,19 +58,24 @@
       font-family: $font-regular;
       font-size: 1.5em;
       float: left;
-      margin-bottom: 1.5em;
+      margin-bottom: 2.5em;
       resize: none; 
       width: 100%;
+    }
+
+    .contact-send {
+      margin-bottom: 2.5em;
     }
 
     .logo-section {
       clear: both;
       text-align: center;
+      margin-bottom: 1.5em;
       width: 100%;
 
       .contact-logo-wrapper {
         display: inline-block;
-        width: 5em;
+        width: 6em;
       }
     }
   }

@@ -24,3 +24,16 @@
     }
   }
 }
+
+.contact-btn {
+  @extend .link-btn;
+  background-color: $aqua;
+  color: $nile;
+  text-transform: uppercase;
+  width: 140px;
+
+  &:hover {
+    background-color: $white;
+    color: $nile;
+  }
+}
