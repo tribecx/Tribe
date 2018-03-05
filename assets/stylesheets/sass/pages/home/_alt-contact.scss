@@ -44,22 +44,33 @@
       	  border-bottom: 5px solid red;
           box-shadow: inset 0 1px 1px $nile, 0 0 8px $nile;
       	}
-      }
+      }      
+    }
 
-      .message-input {
-      	@include placeholder {
-      	  color: $stone;
-      	  text-transform: uppercase;
-      	}
-      	background-color: $white;
-      	border: none;
-      	color: $nile; 
-      	font-family: $font-regular;
-      	font-size: 1.5em;
-      	float: left;
-      	margin-bottom: 1.5em;
-      	resize: none; 
-      	width: 100%;
+    .message-input {
+      @include placeholder {
+        color: $stone;
+        text-transform: uppercase;
+      }
+      background-color: $white;
+      border: none;
+      color: $nile; 
+      font-family: $font-regular;
+      font-size: 1.5em;
+      float: left;
+      margin-bottom: 1.5em;
+      resize: none; 
+      width: 100%;
+    }
+
+    .logo-section {
+      clear: both;
+      text-align: center;
+      width: 100%;
+
+      .contact-logo-wrapper {
+        display: inline-block;
+        width: 5em;
       }
     }
   }
