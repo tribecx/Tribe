@@ -7,6 +7,10 @@
     margin-top: 2.3em;
     width: 50%;
 
+    @include medium {
+      width: 100%;
+    }
+
     @include small {
       width: 100%;
     }
@@ -27,8 +31,9 @@
     }
 
     .form-wrapper {
-      text-align: left;
       font-family: $font-regular;
+      margin: 2.5em auto;
+      text-align: left;
 
       @include small {
         margin-bottom: 3.5em;
@@ -91,6 +96,17 @@
         display: inline-block;
         width: 6em;
       }
+    }
+
+    .medium {
+
+      @include medium {
+        width: 50%;        
+      }
+
+      @include small {
+        width: 100%;
+      }      
     }
   }
 }
