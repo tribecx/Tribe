@@ -7,6 +7,10 @@
     margin-top: 2.3em;
     width: 50%;
 
+    @include small {
+      width: 100%;
+    }
+
     .title {
       color: $aqua;
       font-family: $font-title;
@@ -14,11 +18,21 @@
       line-height: 1.8em;
       text-align: left;
       text-transform: uppercase;
+
+      @include small {
+        font-size: 2.4em;
+        margin-bottom: 1.5em;
+        text-align: center;
+      }
     }
 
     .form-wrapper {
       text-align: left;
       font-family: $font-regular;
+
+      @include small {
+        margin-bottom: 3.5em;
+      }
 
       .input-label {
       	color: $white;
