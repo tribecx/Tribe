@@ -4,7 +4,7 @@
 
   .contact-wrapper {
     display: inline-block;
-    margin-top: 1.3em;
+    margin-top: 2.3em;
     width: 50%;
 
     .title {
@@ -22,7 +22,7 @@
 
       .input-label {
       	color: $white;
-      	font-size: 1.5em;
+      	font-size: 1.8em;
       }
 
       .form-control {
@@ -31,7 +31,7 @@
       	background-color: $nile;
       	border-bottom: 2px solid $aqua;
       	font-family: $font-regular;
-      	font-size: 1.3em;
+      	font-size: 1.5em;
 
       	&:focus {
       	  border: none;
@@ -55,7 +55,7 @@
       	border: none;
       	color: $nile; 
       	font-family: $font-regular;
-      	font-size: 1.3em;
+      	font-size: 1.5em;
       	float: left;
       	margin-bottom: 1.5em;
       	resize: none; 
