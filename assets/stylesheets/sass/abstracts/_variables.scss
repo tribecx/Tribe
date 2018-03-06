@@ -1,3 +1,26 @@
 $font-regular: Stratum-Medium;
 $font-section: Stratum-Light;
 $font-title: Stratum-Bold;
+
+$small-width: 600px;
+$medium-width: 992px;
+$large-width: 993px;
+$extra-large-width: 1200px;
+
+@mixin small {
+  @media (max-width: #{$small-width}){
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: #{$medium-width}){
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large-width}){
+    @content;
+  }
+}
