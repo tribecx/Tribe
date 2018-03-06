@@ -28,6 +28,7 @@
 .contact-btn {
   @extend .link-btn;
   background-color: $aqua;
+  border: none;
   color: $nile;
   text-transform: uppercase;
   width: 140px;
