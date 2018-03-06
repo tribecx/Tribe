@@ -1,0 +1,20 @@
+.footer {
+  background-color: $aqua;
+  text-align: center;
+
+  .footer-wrapper {
+  	display: inline-block;
+  	width: 100%;
+
+  	.footer-text {
+  	  color: $nile;
+      font-family: $font-regular;
+      font-size: 1.4em;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 1.6em;
+      margin: auto;
+      text-transform: uppercase;
+  	}
+  }
+}
