@@ -1,6 +1,7 @@
 var popYac = document.getElementById("popYaco");
 var popWan = document.getElementById("popWand");
 var popEmpre = document.getElementById("popEmpress");
+var popSic = document.getElementById("popSicar");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
@@ -27,4 +28,13 @@ function showPopEmpress() {
 
 function closeEmpress() {
 	popEmpre.style.display = "none";
+}
+
+//FUNCIONES PARA SICAR
+function showPopSicar() {
+	popSic.style.display = "block";
+}
+
+function closeSicar() {
+	popSic.style.display = "none";
 }
