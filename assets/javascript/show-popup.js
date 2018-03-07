@@ -1,40 +1,60 @@
-var popYac = document.getElementById("popYaco");
-var popWan = document.getElementById("popWand");
-var popEmpre = document.getElementById("popEmpress");
-var popSic = document.getElementById("popSicar");
+var Yaco = document.getElementById("popYaco");
+var Wand = document.getElementById("popWand");
+var Empress = document.getElementById("popEmpress");
+var Sicar = document.getElementById("popSicar");
+var Paci = document.getElementById("popPaci");
+var Ocupa = document.getElementById("popOcupa");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
-	popYac.style.display = "block";
+	Yaco.style.display = "block";
 }
 
 function closeYaco() {
-	popYac.style.display = "none";
+	Yaco.style.display = "none";
 }
 
 //FUNCIONES PARA WAND
 function showPopWand() {
-	popWan.style.display = "block";
+	Wand.style.display = "block";
 }
 
 function closeWand() {
-	popWan.style.display = "none";
+	Wand.style.display = "none";
 }
 
 //FUNCIONES PARA EMPRESS
 function showPopEmpress() {
-	popEmpre.style.display = "block";
+	Empress.style.display = "block";
 }
 
 function closeEmpress() {
-	popEmpre.style.display = "none";
+	Empress.style.display = "none";
 }
 
 //FUNCIONES PARA SICAR
 function showPopSicar() {
-	popSic.style.display = "block";
+	Sicar.style.display = "block";
 }
 
 function closeSicar() {
-	popSic.style.display = "none";
+	Sicar.style.display = "none";
+}
+
+//FUNCIONES PARA PACI
+function showPopPaci() {
+	Paci.style.display = "block";
+}
+
+function closePaci() {
+	Paci.style.display = "none";
+}
+
+//FUNCIONES PARA OCUPA
+function showPopOcupa() {
+	Ocupa.style.display = "block";
+}
+
+function closeOcupa() {
+	Ocupa.style.display = "none";
 }
