@@ -1,0 +1,68 @@
+.popup {
+	//display: none;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+    height: 100%;
+  
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;  
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .popup-body {
+  	background-color: $white;
+  	border: none;
+  	display: inline-block;
+  	left: 5%;
+  	padding: 4.5em;
+  	position: absolute;
+  	top: 78px;
+  	width: 90%;
+
+    .text-wrapper {
+      color: $nile;
+      float: left;
+      font-family: $font-section;
+      margin-bottom: 3em;
+      text-align: left;
+      width: 50%;
+      
+      .title-divider {
+      	width: 100%;
+      	  
+      	.title {
+          display: inline-block;
+          font-size: 2.6em;
+          width: auto;
+        }
+
+        .branding {
+          display:inline-block;
+          font-size: 1.8em;
+          width: auto;
+        }
+      }
+
+      .text {
+      	font-size: 1.8em;
+      	line-height: 24px;
+      }     
+    }
+
+    .image-wrapper {
+      clear: both;
+      margin-top: 3em;
+
+      .image {
+      	width: 100%;
+      }
+    }
+  }
+}
