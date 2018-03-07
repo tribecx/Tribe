@@ -4,6 +4,7 @@ var Empress = document.getElementById("popEmpress");
 var Sicar = document.getElementById("popSicar");
 var Paci = document.getElementById("popPaci");
 var Ocupa = document.getElementById("popOcupa");
+var Citro = document.getElementById("popCitro");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
@@ -57,4 +58,13 @@ function showPopOcupa() {
 
 function closeOcupa() {
 	Ocupa.style.display = "none";
+}
+
+//FUNCIONES PARA ITROJUGO
+function showPopCitro() {
+	Citro.style.display = "block";
+}
+
+function closeCitro() {
+	Citro.style.display = "none";
 }
