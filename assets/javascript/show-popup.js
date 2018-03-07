@@ -1,18 +1,30 @@
 var popYac = document.getElementById("popYaco");
 var popWan = document.getElementById("popWand");
+var popEmpre = document.getElementById("popEmpress");
 
+//FUNCIONES PARA YAYACO
 function showPopYaco() {
-	popYaco.style.display = "block";
+	popYac.style.display = "block";
 }
 
 function closeYaco() {
-	popYaco.style.display = "none";
+	popYac.style.display = "none";
 }
 
+//FUNCIONES PARA WAND
 function showPopWand() {
-	popWand.style.display = "block";
+	popWan.style.display = "block";
 }
 
 function closeWand() {
-	popWand.style.display = "none";
+	popWan.style.display = "none";
+}
+
+//FUNCIONES PARA EMPRESS
+function showPopEmpress() {
+	popEmpre.style.display = "block";
+}
+
+function closeEmpress() {
+	popEmpre.style.display = "none";
 }
