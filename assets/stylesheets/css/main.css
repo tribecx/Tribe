@@ -679,6 +679,7 @@ a {
     margin-top: 32px; }
 
 .popup {
+  display: none;
   left: 0;
   position: fixed;
   text-align: center;
@@ -703,6 +704,7 @@ a {
     width: 90%; }
     .popup .popup-body .text-wrapper {
       color: #1A4052;
+      display: inline-block;
       float: left;
       font-family: Stratum-Light;
       margin-bottom: 3em;
@@ -721,6 +723,19 @@ a {
       .popup .popup-body .text-wrapper .text {
         font-size: 1.8em;
         line-height: 24px; }
+    .popup .popup-body .close-section {
+      display: inline-block;
+      width: 50%;
+      float: left; }
+      .popup .popup-body .close-section .close-wrapper {
+        color: #1A4052;
+        cursor: pointer;
+        text-align: right;
+        text-decoration: none; }
+        .popup .popup-body .close-section .close-wrapper .close {
+          color: #1A4052;
+          font-family: Stratum-Light;
+          font-size: 1.8em; }
     .popup .popup-body .image-wrapper {
       clear: both;
       margin-top: 3em; }

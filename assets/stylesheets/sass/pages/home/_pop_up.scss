@@ -1,5 +1,5 @@
 .popup {
-	//display: none;
+	display: none;
 	left: 0;
 	position: fixed;
 	text-align: center;
@@ -55,6 +55,25 @@
       	font-size: 1.8em;
       	line-height: 24px;
       }     
+    }
+
+    .close-section {
+      display: inline-block;
+      width: 50%;
+      float: left;
+
+      .close-wrapper{
+      	color: $nile;
+      	cursor: pointer;        
+        text-align: right;
+        text-decoration: none;
+
+        .close {
+          color: $nile;
+          font-family: $font-section;
+          font-size: 1.8em;
+        }
+      }
     }
 
     .image-wrapper {

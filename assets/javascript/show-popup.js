@@ -4,6 +4,6 @@ function showPopYaco() {
 	popYaco.style.display = "block";
 }
 
-function closePopUp() {
+function closeYaco() {
 	popYaco.style.display = "none";
 }
