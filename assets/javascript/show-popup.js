@@ -8,6 +8,7 @@ var Citro = document.getElementById("popCitro");
 var Favu = document.getElementById("popFavu");
 var Plug = document.getElementById("popPlug");
 var Habit = document.getElementById("popHabit");
+var Ural = document.getElementById("popUral");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
@@ -97,4 +98,13 @@ function showPopHabit() {
 
 function closeHabit() {
 	Habit.style.display = "none";
+}
+
+//FUNCIONES PARA PROHABIT
+function showPopUral() {
+	Ural.style.display = "block";
+}
+
+function closeUral() {
+	Ural.style.display = "none";
 }
