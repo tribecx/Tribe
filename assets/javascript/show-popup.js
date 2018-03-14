@@ -7,6 +7,7 @@ var Ocupa = document.getElementById("popOcupa");
 var Citro = document.getElementById("popCitro");
 var Favu = document.getElementById("popFavu");
 var Plug = document.getElementById("popPlug");
+var Habit = document.getElementById("popHabit");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
@@ -87,4 +88,13 @@ function showPopPlug() {
 
 function closePlug() {
 	Plug.style.display = "none";
+}
+
+//FUNCIONES PARA PROHABIT
+function showPopHabit() {
+	Habit.style.display = "block";
+}
+
+function closeHabit() {
+	Habit.style.display = "none";
 }
