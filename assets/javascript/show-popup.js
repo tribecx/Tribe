@@ -5,6 +5,8 @@ var Sicar = document.getElementById("popSicar");
 var Paci = document.getElementById("popPaci");
 var Ocupa = document.getElementById("popOcupa");
 var Citro = document.getElementById("popCitro");
+var Favu = document.getElementById("popFavu");
+var Plug = document.getElementById("popPlug");
 
 //FUNCIONES PARA YAYACO
 function showPopYaco() {
@@ -67,4 +69,22 @@ function showPopCitro() {
 
 function closeCitro() {
 	Citro.style.display = "none";
+}
+
+//FUNCIONES PARA Favu
+function showPopFavu() {
+	Favu.style.display = "block";
+}
+
+function closeFavu() {
+	Favu.style.display = "none";
+}
+
+//FUNCIONES PARA Weplug
+function showPopPlug() {
+	Plug.style.display = "block";
+}
+
+function closePlug() {
+	Plug.style.display = "none";
 }
