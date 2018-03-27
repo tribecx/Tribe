@@ -1,0 +1,15 @@
+.footer {
+  background-color: $aqua;
+  color: $text-dark;
+  padding: 22px 5px;
+  text-align: center;
+
+  .footer-copyright {
+    font-family: $font-regular;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    line-height: 1em;
+    margin: 0.428em;
+    text-transform: uppercase;
+  }
+}
