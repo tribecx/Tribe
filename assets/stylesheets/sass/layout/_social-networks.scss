@@ -1,0 +1,35 @@
+.social-networks {
+  display: block;
+  margin: auto;
+  text-align: center;
+  
+  .social-link {
+    background-color: $aqua;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    margin: 0 7.5px;
+    width: 40px;
+
+    &.facebook {
+      background-image: url('../../images/icons/facebook.svg');
+    }
+
+    &.instagram {
+      background-image: url('../../images/icons/instagram.svg');
+    }
+
+    &.vimeo {
+      background-image: url('../../images/icons/vimeo.svg');
+    }
+
+    &.linkedin {
+      background-image: url('../../images/icons/linkedin.svg');
+    }
+
+    @include on-event {
+      background-color: $white;
+    }
+  }
+}
