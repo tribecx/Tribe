@@ -1,0 +1,94 @@
+.popup {
+  display: none;
+  left: 0;
+  min-height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    min-height: 100%;  
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .popup-body {
+  	background-color: $white;
+  	border: none;
+  	display: inline-block;
+  	height: calc(100vh - 8vw);
+  	overflow-y: scroll;
+  	padding: 4.5em;
+  	position: relative;
+  	top: 4vw;
+  	width: 90%;
+
+  	div:last-child {
+  	  margin-bottom: 4.5em;
+  	}
+  	
+    .text-wrapper {
+      color: $nile;
+      display: inline-block;
+      float: left;
+      font-family: $font-section;
+      margin-bottom: 3em;
+      text-align: left;
+      width: 50%;
+      
+      .title-divider {
+      	width: 100%;
+      	  
+      	.title {
+          display: inline-block;
+          font-size: 2.6em;
+          width: auto;
+        }
+
+        .branding {
+          display:inline-block;
+          font-size: 1.8em;
+          width: auto;
+        }
+      }
+
+      .text {
+      	font-size: 1.8em;
+      	line-height: 24px;
+      }     
+    }
+
+    .close-section {
+      display: inline-block;
+      width: 50%;
+      float: left;
+
+      .close-wrapper{
+      	color: $nile;
+      	cursor: pointer;        
+        text-align: right;
+        text-decoration: none;
+
+        .close {
+          color: $nile;
+          font-family: $font-section;
+          font-size: 1.8em;
+        }
+      }
+    }
+
+    .image-wrapper {
+      clear: both;
+      margin-top: 3em;
+
+      .image {
+      	width: 100%;
+      }
+    }
+  }
+}
