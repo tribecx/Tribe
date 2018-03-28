@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="portfolio-book">
-        <div class="portfolio-1 portfolio-big" onclick="showPopYaco()">
+        <div class="portfolio-1 portfolio-big" onclick="openPopup('yayaco')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -77,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-3 portfolio-small" onclick="showPopPaci()">
+        <div class="portfolio-3 portfolio-small" onclick="openPopup('paci')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-4 portfolio-small">
+        <div class="portfolio-4 portfolio-small" onclick="openPopup('sicar')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-5 portfolio-small">
+        <div class="portfolio-5 portfolio-small" onclick="openPopup('citrojugo')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-6 portfolio-small" onclick="showPopWand()">
+        <div class="portfolio-6 portfolio-small" onclick="openPopup('wand')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -127,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-8 portfolio-medium" onclick="showPopSicar()">
+        <div class="portfolio-8 portfolio-medium" onclick="openPopup('sicar')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -137,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-9 portfolio-medium" onclick="showPopEmpress()">
+        <div class="portfolio-9 portfolio-medium" onclick="openPopup('empress')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -147,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-10 portfolio-big float-right" onclick="showPopFavu()">
+        <div class="portfolio-10 portfolio-big float-right" onclick="openPopup('favu')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -157,7 +157,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-11 portfolio-medium float-right" onclick="showPopOcupa()">
+        <div class="portfolio-11 portfolio-medium float-right" onclick="openPopup('ocupa')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -167,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-12 portfolio-medium float-right" onclick="showPopCitro()">
+        <div class="portfolio-12 portfolio-medium float-right" onclick="openPopup('citrojugo')">
           <div class="portfolio-shadow">
             <div class="portfolio-text">
               <div class="portfolio-info">
@@ -185,16 +185,16 @@
     </section>
 
     <section class="contact section">
-      
+
     </section>
 
-    <section id="popYaco" class="popup">
-      <div class="shadow" onclick="closeYaco()"></div>
+    <section id="popup-yayaco" class="popup">
+      <div class="shadow" onclick="closePopup('yayaco')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>YAYACO!</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -205,24 +205,24 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeYaco()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('yayaco')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/yayaco/yayaco1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/yayaco/yayaco2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/yayaco/yayaco3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/yayaco/yayaco4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/yayaco/yayaco5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/yayaco/yayaco1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/yayaco/yayaco2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/yayaco/yayaco3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/yayaco/yayaco4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/yayaco/yayaco5.jpg"></div>
       </div>
     </section>
 
-    <section id="popWand" class="popup">
-      <div class="shadow" onclick="closeWand()"></div>
+    <section id="popup-wand" class="popup">
+      <div class="shadow" onclick="closePopup('wand')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Wand</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -233,28 +233,28 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeWand()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('wand')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand7.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand8.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/wand/wand9.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand8.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/wand/wand9.jpg"></div>
       </div>
     </section>
 
-    <section id="popEmpress" class="popup">
-      <div class="shadow" onclick="closeEmpress()"></div>
+    <section id="popup-empress" class="popup">
+      <div class="shadow" onclick="closePopup('empress')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Empress</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -265,28 +265,28 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeEmpress()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('empress')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress7.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress8.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/empress/empress9.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress8.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/empress/empress9.jpg"></div>
       </div>
     </section>
 
-    <section id="popSicar" class="popup">
-      <div class="shadow" onclick="closeSicar()"></div>
+    <section id="popup-sicar" class="popup">
+      <div class="shadow" onclick="closePopup('sicar')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Sicar</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -297,25 +297,25 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeSicar()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('sicar')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/sicar/sicar6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/sicar/sicar6.jpg"></div>
       </div>
     </section>
 
-    <section id="popPaci" class="popup">
-      <div class="shadow" onclick="closePaci()"></div>
+    <section id="popup-paci" class="popup">
+      <div class="shadow" onclick="closePopup('paci')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Paci Energy</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -326,27 +326,27 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closePaci()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('paci')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci7.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/paci/paci8.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/paci/paci8.jpg"></div>
       </div>
     </section>
 
-    <section id="popOcupa" class="popup">
-      <div class="shadow" onclick="closeOcupa()"></div>
+    <section id="popup-ocupa" class="popup">
+      <div class="shadow" onclick="closePopup('ocupa')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Grupo OCUPA</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -357,31 +357,31 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeOcupa()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('ocupa')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa7.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa8.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa9.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa10.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa11.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ocupa/ocupa12.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa8.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa9.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa10.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa11.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ocupa/ocupa12.jpg"></div>
       </div>
     </section>
 
-    <section id="popCitro" class="popup">
-      <div class="shadow" onclick="closeCitro()"></div>
+    <section id="popup-citrojugo" class="popup">
+      <div class="shadow" onclick="closePopup('citrojugo')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Citrojugo Web</b></p>
-            <p class="branding"> / Diseño web</p>  
+            <p class="branding"> / Diseño web</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -392,25 +392,25 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeCitro()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('citrojugo')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/citrojugo/citrojugo6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/citrojugo/citrojugo6.jpg"></div>
       </div>
     </section>
 
-    <section id="popFavu" class="popup">
-      <div class="shadow" onclick="closeFavu()"></div>
+    <section id="popup-favu" class="popup">
+      <div class="shadow" onclick="closePopup('favu')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Favu</b></p>
-            <p class="branding"> / Diseño de interfaz</p>  
+            <p class="branding"> / Diseño de interfaz</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -421,25 +421,25 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeFavu()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('favu')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/favu/favu6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/favu/favu6.jpg"></div>
       </div>
     </section>
 
-    <section id="popPlug" class="popup">
-      <div class="shadow" onclick="closePlug()"></div>
+    <section id="popup-weplug" class="popup">
+      <div class="shadow" onclick="closePopup('weplug')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Weplug</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -450,26 +450,26 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closePlug()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('weplug')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/weplug/weplug7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/weplug/weplug7.jpg"></div>
       </div>
     </section>
 
-    <section id="popHabit" class="popup">
-      <div class="shadow" onclick="closeHabit()"></div>
+    <section id="popup-habit" class="popup">
+      <div class="shadow" onclick="closePopup('habit')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Prohabit</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -480,26 +480,26 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeHabit()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('habit')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit5.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit6.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/prohabit/Prohabit7.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit6.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/prohabit/Prohabit7.jpg"></div>
       </div>
     </section>
 
-    <section id="popUral" class="popup">
-      <div class="shadow" onclick="closeUral()"></div>
+    <section id="popup-ural" class="popup">
+      <div class="shadow" onclick="closePopup('ural')"></div>
       <div class="popup-body">
         <div class="text-wrapper">
           <div class="title-divider">
             <p class="title"><b>Ural</b></p>
-            <p class="branding"> / Branding</p>  
+            <p class="branding"> / Branding</p>
           </div>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -510,18 +510,18 @@
         </div>
         <div class="close-section">
           <div class="close-wrapper">
-            <p class="close" onclick="closeUral()">X Cerrar</p>  
-          </div>          
+            <p class="close" onclick="closePopup('ural')">X Cerrar</p>
+          </div>
         </div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ural/Ural1.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ural/Ural2.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ural/Ural3.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ural/Ural4.jpg"></div>
-        <div class="image-wrapper"><img class="image" src="assets/images/pop_ups/ural/Ural5.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ural/Ural1.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ural/Ural2.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ural/Ural3.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ural/Ural4.jpg"></div>
+        <div class="image-wrapper"><img class="image" src="assets/images/portfolio/popups/ural/Ural5.jpg"></div>
       </div>
     </section>
 
-    <script type="text/javascript" src="assets/javascript/show-popup.js"></script>
+    <script type="text/javascript" src="assets/javascripts/popup.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
