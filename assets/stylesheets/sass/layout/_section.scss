@@ -1,3 +1,7 @@
 .section {
   padding: 34px 99px;
+
+  @include small {
+    padding: 3.5em 1.5em;
+  }
 }
