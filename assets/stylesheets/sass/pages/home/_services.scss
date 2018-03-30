@@ -1,14 +1,28 @@
 .services {
   position: relative;
+  text-align: center;
 
   .services-contact {
+    display: inline-block;
     position: absolute;
     right: 109px;
     top: -1.25em;
+
+    @include small {
+      margin: auto;
+      position: relative;
+      right: auto;
+      top: auto;
+    }
   }
 
   .services-wrapper {
     margin: 34px 10px;
+    text-align: left;
+
+    @include medium {
+      margin: 34px 6px;
+    }
   }
 
   .services-text {
@@ -19,6 +33,10 @@
   .services-center {
     margin: 0 10px 0 30px;
     text-transform: uppercase;
+
+    @include medium {
+      margin: 0 15px;
+    }
   }
 
   .services-list {

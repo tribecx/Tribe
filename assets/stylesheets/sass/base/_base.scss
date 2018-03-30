@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
+
+  @include medium {
+    font-size: 8px;
+  }
 }
 
 /**

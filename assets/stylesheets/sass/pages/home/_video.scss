@@ -1,9 +1,11 @@
 .video {
   background: $nile;
-  padding-top: 34px;
+  padding-top: 17px;
 
   .video-player {
     display: block;
     margin: auto;
+    max-width: 1200px;
+    width: 100%;
   }
 }

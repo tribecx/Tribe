@@ -2,27 +2,17 @@ $font-regular: Stratum-Medium;
 $font-section: Stratum-Light;
 $font-title: Stratum-Bold;
 
+// Extra small screen / phone
+$screen-xs: 480px;
 
-//responsive
-$small-width: 600px;
-$medium-width: 992px;
-$large-width: 993px;
-$extra-large-width: 1200px;
+// Small screen / tablet
+$screen-sm: 600px;
 
-@mixin small {
-  @media (max-width: #{$small-width}){
-    @content;
-  }
-}
+// Medium screen / desktop
+$screen-md: 768px;
 
-@mixin medium {
-  @media (max-width: #{$medium-width}){
-    @content;
-  }
-}
+// Large screen / wide desktop
+$screen-lg: 992px;
 
-@mixin large {
-  @media (min-width: #{$large-width}){
-    @content;
-  }
-}
+// Extra large screen / wider desktop
+$screen-xl: 1200px;

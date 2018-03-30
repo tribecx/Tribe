@@ -1,7 +1,19 @@
 .section {
   padding: 34px 99px;
 
+  @include extra-large {
+    padding: 34px 65px;
+  }
+
+  @include large {
+    padding: 32px 20px;
+  }
+
+  @include medium {
+    padding: 30px 10px;
+  }
+
   @include small {
-    padding: 3.5em 1.5em;
+    padding: 24px 10px 0;
   }
 }

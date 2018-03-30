@@ -3,6 +3,10 @@
   font-family: $font-section;
   font-size: 4em;
   text-transform: uppercase;
+
+  @include small {
+    font-size: 3.75em;
+  }
 }
 
 .title-strong {

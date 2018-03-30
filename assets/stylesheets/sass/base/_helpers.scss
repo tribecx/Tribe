@@ -48,3 +48,15 @@
   position: absolute;
   width: 1px;
 }
+
+.hide-on-md {
+  @include medium {
+    display: none !important;
+  }
+}
+
+.hide-on-sm {
+  @include small {
+    display: none !important;
+  }
+}

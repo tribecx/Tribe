@@ -1,0 +1,35 @@
+@mixin extra-small {
+  @media (max-width: #{$screen-xs}){
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$screen-sm}){
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: #{$screen-md}){
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: #{$screen-lg}){
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media (max-width: #{$screen-xl}){
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}

@@ -1,20 +1,62 @@
 .blog {
   background-color: $cristal;
-  padding: 7.5em 99px 9.5em;
+  padding-bottom: 9.5em;
+  padding-top: 7.5em;
   text-align: center;
+
+  @include small {
+    padding-bottom: 4.5em;
+    padding-top: 2.6em;
+  }
 
   .title-section {
     font-size: 4.8em;
     padding: 0 10px;
     text-align: left;
+
+    @include medium {
+      padding: 0 6px;
+    }
+
+    @include small {
+      font-size: 3.75em;
+    }
   }
 
   .blog-news {
     display: flex;
     margin: 2em -16px;
+
+    @include large {
+      margin: 2em -6px;
+    }
+
+    @include medium {
+      margin: 2em 0;
+    }
+
+    @include small {
+      margin: 10px 6px;
+    }
   }
 
   .news-item {
+    background-color: $white;
+    flex-grow: 1;
+    margin: 24px 26px;
+
+    @include large {
+      margin: 24px 16px;
+    }
+
+    @include medium {
+      margin: 20px 6px;
+    }
+
+    @include small {
+      margin: 0 0 10px;
+    }
+
     @include on-event {
       background-color: $nile;
       color: $white;
@@ -31,10 +73,6 @@
         }
       }
     }
-
-    background-color: $white;
-    flex-grow: 1;
-    margin: 24px 26px;
 
     .news-image {
       width: 100%;
@@ -53,6 +91,10 @@
       font-weight: bold;
       margin-bottom: 0.8em;
       text-align: left;
+
+      @include small {
+        margin-bottom: 0.6em;
+      }
     }
 
     .news-excerpt {
@@ -61,12 +103,22 @@
       line-height: 1.2em;
       margin-bottom: 1.8em;
       text-align: left;
+
+      @include small {
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin-bottom: 1.1em;
+      }
     }
 
     .news-date {
       font-size: 0.55em;
       margin-bottom: 0.9em;
       text-align: left;
+
+      @include small {
+        font-size: 0.7em;
+      }
     }
 
     .news-link {
@@ -75,6 +127,10 @@
       font-size: 0.6em;
       font-weight: bold;
       text-transform: uppercase;
+
+      @include small {
+        font-size: 0.75em;
+      }
     }
   }
 }

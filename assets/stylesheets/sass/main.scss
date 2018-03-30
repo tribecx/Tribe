@@ -5,7 +5,8 @@
 @import
   'abstracts/colors',
   'abstracts/mixins',
-  'abstracts/variables';
+  'abstracts/variables',
+  'abstracts/media_queries';
 
 // 2. Vendors
 @import
@@ -38,4 +39,3 @@
   'pages/home/portfolio',
   'pages/home/blog',
   'pages/home/pop_up';
-

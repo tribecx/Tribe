@@ -6,6 +6,10 @@
     padding: 0 10px;
     text-align: left;
     width: 50%;
+
+    @include medium {
+      padding: 0 6px;
+    }
   }
 
   .portfolio-categories {
@@ -42,6 +46,10 @@
     margin: 10px;
     position: relative;
 
+    @include medium {
+      margin: 6px;
+    }
+
     @include on-event {
       .portfolio-shadow {
         cursor: pointer;
@@ -54,22 +62,49 @@
     }
   }
 
-  $big-edge: calc(50% - 20px);
-  $small-edge: calc(25% - 20px);
-
   .portfolio-big {
-    padding-bottom: $big-edge;
-    width: $big-edge;
+    padding-bottom: calc(50% - 20px);
+    width: calc(50% - 20px);
+
+    @include medium {
+      padding-bottom: calc(50% - 12px);
+      width: calc(50% - 12px);
+    }
+
+    @include small {
+      padding-bottom: calc(100% - 12px);
+      width: calc(100% - 12px);
+    }
   }
 
   .portfolio-medium {
-    padding-bottom: $small-edge;
-    width: $big-edge;
+    padding-bottom: calc(25% - 20px);
+    width: calc(50% - 20px);
+
+    @include medium {
+      padding-bottom: calc(25% - 12px);
+      width: calc(50% - 12px);
+    }
+
+    @include small {
+      padding-bottom: calc(50% - 12px);
+      width: calc(100% - 12px);
+    }
   }
 
   .portfolio-small {
-    padding-bottom: $small-edge;
-    width: $small-edge;
+    padding-bottom: calc(25% - 20px);
+    width: calc(25% - 20px);
+
+    @include medium {
+      padding-bottom: calc(25% - 12px);
+      width: calc(25% - 12px);
+    }
+
+    @include small {
+      padding-bottom: calc(50% - 12px);
+      width: calc(50% - 12px);
+    }
   }
 
   @for $i from 1 through 12 {
@@ -82,12 +117,20 @@
     background: $polarized;
     height: 100%;
     left: 0;
-    padding: 5% 4%;
+    padding: 20px;
     position: absolute;
     text-align: left;
     top: 0;
     visibility: hidden;
     width: 100%;
+
+    @include large {
+      padding: 15px;
+    }
+
+    @include medium {
+      padding: 10px;
+    }
   }
 
   .portfolio-text {
@@ -96,6 +139,10 @@
     display: inline-block;
     overflow: hidden;
     padding-left: 14px;
+
+    @include medium {
+      padding-left: 8px;
+    }
   }
 
   .portfolio-info {
@@ -120,5 +167,9 @@
 
   .portfolio-more {
     margin: 32px 0 10px;
+
+    @include small {
+      margin: 6px 0 35px;
+    }
   }
 }
