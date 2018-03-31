@@ -1,0 +1,117 @@
+.popup {
+  display: none;
+  left: 0;
+  min-height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  .shadow {
+    background-color: $shadow;
+    cursor: pointer;
+    min-height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .popup-body {
+  	background-color: $white;
+  	display: inline-block;
+  	height: calc(100vh - 8vw);
+  	overflow-y: scroll;
+  	padding: 4.5em;
+  	position: relative;
+  	top: 4vw;
+  	width: 90%;
+
+    @include medium {
+      padding: 3.5em;
+    }
+
+    @include small {
+      padding: 2.5em;
+    }
+
+  	div:last-child {
+  	  margin-bottom: 4.5em;
+  	}
+
+    .text-wrapper {
+      color: $nile;
+      font-family: $font-section;
+      margin-bottom: 3.5em;
+      position: relative;
+      text-align: left;
+
+      .title-divider {
+        margin-bottom: 1.4em;
+      	width: 100%;
+
+      	.title {
+          display: inline-block;
+          font-size: 3.5em;
+          line-height: 0.8em;
+          vertical-align: bottom;
+        }
+
+        .branding {
+          display:inline-block;
+          font-size: 2.4em;
+          line-height: 0.8em;
+          vertical-align: bottom;
+        }
+      }
+
+      .text {
+        font-family: 'Open Sans', sans-serif;
+      	font-size: 1.8em;
+        font-weight: 300;
+      	line-height: 1.4em;
+        width: 49%;
+
+        @include large {
+          width: 65%;
+        }
+
+        @include medium {
+          width: 75%;
+        }
+
+        @include small {
+          width: 100%;
+        }
+      }
+    }
+
+    .popup-close {
+      font-size: 2.4em;
+      line-height: 0.9em;
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0.7;
+
+      @include small {
+        right: -0.2em;
+        top: -0.2em;
+      }
+
+      @include on-event {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+
+    .image-wrapper {
+      clear: both;
+      margin-top: 3em;
+
+      .image {
+      	width: 100%;
+      }
+    }
+  }
+}

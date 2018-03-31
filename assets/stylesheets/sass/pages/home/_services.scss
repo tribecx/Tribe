@@ -8,6 +8,18 @@
     right: 109px;
     top: -1.25em;
 
+    @include extra-large {
+      right: 75px;
+    }
+
+    @include large {
+      right: 30px;
+    }
+
+    @include medium {
+      right: 16px;
+    }
+
     @include small {
       margin: auto;
       position: relative;
