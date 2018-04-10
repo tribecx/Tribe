@@ -65,6 +65,12 @@
   }
 }
 
+.show-on-md {
+  @include medium {
+    display: block;
+  }
+}
+
 .show-on-sm {
   @include small {
     display: block;

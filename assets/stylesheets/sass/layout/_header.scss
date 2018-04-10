@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 9999;
 
-  @include small {
+  @include medium {
     background: $nile;
     border: none;
   }
@@ -12,7 +12,7 @@
   .header-logo {
     margin: 20px auto 0 23px;
 
-    @include small {
+    @include medium {
       height: 40px;
       margin: 12px auto 12px 10px;
     }
