@@ -1,5 +1,10 @@
 .portfolio {
+  padding-top: 64px;
   text-align: center;
+
+  @include small {
+    padding-top: 82px;
+  }
 
   .title-section {
     float: left;

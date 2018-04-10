@@ -1,0 +1,20 @@
+.owl-dots {
+  bottom: 30px;
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 128px;
+
+  .owl-dot {
+    background: $white !important;
+    border-radius: 3px;
+    height: 12px;
+    margin: 0 10px;
+    width: 12px;
+
+    &.active {
+      background: $aqua !important;
+    }
+  }
+}

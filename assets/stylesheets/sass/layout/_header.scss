@@ -1,23 +1,35 @@
 .header {
-  background: $nile;
   border-top: solid 10px $aqua;
-  padding-bottom: 17px;
-  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+
+  @include small {
+    background: $nile;
+    border: none;
+  }
 
   .header-logo {
-    margin: 38px auto 25px;
+    margin: 20px auto 0 23px;
+
+    @include small {
+      height: 40px;
+      margin: 12px auto 12px 10px;
+    }
   }
 
   .header-nav {
-    margin: 0 auto;
-    max-width: 805px;
-    padding: 0 25px;
+    float: right;
+    margin: 35px 52px 0 0;
+    max-width: 720px;
+    width: 70%;
   }
 
   .header-link {
     color: $text-clear;
     font-family: $font-title;
-    font-size: 1.8em;
+    font-size: 1.6em;
+    text-align: center;
     text-transform: uppercase;
 
     @include on-event {
@@ -25,13 +37,13 @@
     }
 
     &.alt {
-      background: $white;
-      color: $text-dark;
-      line-height: 2.111em;
-      padding: 0 0.639em;
+      background-color: $aqua;
+      color: $nile;
+      line-height: 2.4em;
+      width: 140px;
 
       @include on-event {
-        background: $aqua;
+        background: $white;
       }
     }
   }

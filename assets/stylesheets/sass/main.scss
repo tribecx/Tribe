@@ -10,7 +10,8 @@
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/owl-carousel.scss';
 
 // 3. Base stuff
 @import
@@ -34,8 +35,9 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home/video',
-  'pages/home/services',
+//'pages/home/video',
+//'pages/home/services',
+  'pages/home/hero',
   'pages/home/portfolio',
   'pages/home/blog',
   'pages/home/popup';

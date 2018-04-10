@@ -64,3 +64,9 @@
     display: none !important;
   }
 }
+
+.show-on-sm {
+  @include small {
+    display: block;
+  }
+}
