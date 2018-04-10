@@ -49,6 +49,10 @@
   width: 1px;
 }
 
+.hidden {
+  display: none;
+}
+
 .hide-on-md {
   @include medium {
     display: none !important;
