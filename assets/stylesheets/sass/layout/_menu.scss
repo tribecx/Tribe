@@ -1,0 +1,68 @@
+.menu {
+  float: right;
+  margin: 35px 52px 0 0;
+  max-width: 720px;
+  width: 70%;
+
+  @include medium {
+    background: $nile;
+    clear: both;
+    float: none;
+    height: calc(100vh - 50px);
+    margin: 0;
+    max-width: none;
+    position: absolute;
+    right: -34em;
+    top: 50px;
+    transition: right 0.3s ease;
+    width: 34em;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  @include small {
+    right: -100%;
+    width: 100vw;
+  }
+}
+
+.menu-link {
+  color: $text-clear;
+  font-family: $font-title;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include medium {
+    color: $aqua;
+    display: block;
+    font-family: $font-section;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 56px;
+    padding: 0 16px;
+    text-align: right;
+  }
+
+  @include on-event {
+    color: $aqua;
+
+    @include medium {
+      background-color: $aqua;
+      color: $nile;
+    }
+  }
+
+  &.alt {
+    background-color: $aqua;
+    color: $nile;
+    line-height: 2.4em;
+    width: 140px;
+
+    @include on-event {
+      background: $white;
+    }
+  }
+}

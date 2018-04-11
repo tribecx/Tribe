@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 function hamburger() {
 	$(".hamburger").click(function(){
-    $(this).toggleClass('active');
+    $('.hamburger, .mobile-menu').toggleClass('active');
   });
 }
 

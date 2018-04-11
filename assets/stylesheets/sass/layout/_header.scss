@@ -23,36 +23,6 @@
     }
   }
 
-  .header-nav {
-    float: right;
-    margin: 35px 52px 0 0;
-    max-width: 720px;
-    width: 70%;
-  }
-
-  .header-link {
-    color: $text-clear;
-    font-family: $font-title;
-    font-size: 1.6em;
-    text-align: center;
-    text-transform: uppercase;
-
-    @include on-event {
-      color: $aqua;
-    }
-
-    &.alt {
-      background-color: $aqua;
-      color: $nile;
-      line-height: 2.4em;
-      width: 140px;
-
-      @include on-event {
-        background: $white;
-      }
-    }
-  }
-
   .hamburger {
     cursor: pointer;
     float: right;

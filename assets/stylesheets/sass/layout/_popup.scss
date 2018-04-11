@@ -33,6 +33,7 @@
     }
 
     @include small {
+      margin: 0;
       padding: 2.5em;
       top: 50px;
       width: 100%;
