@@ -2,11 +2,15 @@
   border-top: solid 10px $aqua;
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
 
   @include medium {
     background: $nile;
     border: none;
+  }
+
+  @include small {
+    z-index: 10000;
   }
 
   .header-logo {
