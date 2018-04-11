@@ -1,7 +1,14 @@
 $(document).ready(function() {
+	hamburger();
 	carousel();
 	catFilters();
 });
+
+function hamburger() {
+	$(".hamburger").click(function(){
+    $(this).toggleClass('active');
+  });
+}
 
 function carousel() {
 	$('.owl-carousel').owlCarousel({
@@ -71,8 +78,10 @@ function catFilters() {
 
 function openPopup(name) {
 	$('#popup-'+name).show();
+	$('body').css({'height':'100vh','overflow':'hidden'});
 }
 
 function closePopup(name) {
 	$('#popup-'+name).hide();
+	$('body').css({'height':'auto','overflow':'visible'});
 }

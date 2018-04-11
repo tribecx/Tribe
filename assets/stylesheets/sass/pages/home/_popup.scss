@@ -6,6 +6,7 @@
   text-align: center;
   top: 0;
   width: 100%;
+  z-index: 10000;
 
   .shadow {
     background-color: $shadow;
@@ -32,7 +33,10 @@
     }
 
     @include small {
+      height: calc(100vh - 50px);
       padding: 2.5em;
+      top: 50px;
+      width: 100%;
     }
 
   	div:last-child {
