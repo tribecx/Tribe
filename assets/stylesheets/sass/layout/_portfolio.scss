@@ -6,6 +6,16 @@
     padding-top: 65px;
   }
 
+  &.alt {
+    padding-bottom: 8em;
+    padding-top: 3em;
+
+    @include small {
+      padding-bottom: 3em;
+      padding-top: 2em;
+    }
+  }
+
   .title-section {
     float: left;
     padding: 0 10px;
@@ -129,7 +139,7 @@
     }
   }
 
-  @for $i from 1 through 12 {
+  @for $i from 1 through 16 {
     .portfolio-#{$i} {
       background: url('../../images/portfolio/portfolio#{$i}.jpg') center/cover no-repeat;
     }

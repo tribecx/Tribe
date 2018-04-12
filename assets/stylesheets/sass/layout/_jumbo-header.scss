@@ -1,0 +1,20 @@
+.jumbo-header {
+  background: $nile;
+  padding: 14em 109px 6em;
+
+  @include extra-large {
+    padding: 14em 75px 6em;
+  }
+
+  @include large {
+    padding: 14em 30px 6em;
+  }
+
+  @include medium {
+    padding: 10em 15px 5em;
+  }
+
+  @include small {
+    padding: 10em 15px 4em;
+  }
+}

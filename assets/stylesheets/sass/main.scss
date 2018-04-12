@@ -23,9 +23,12 @@
 @import
   'layout/header',
   'layout/menu',
+  'layout/jumbo-header',
   'layout/section',
   'layout/contact',
   'layout/popup',
+  'layout/portfolio',
+  'layout/blog',
   'layout/social-networks',
   'layout/footer';
 
@@ -38,6 +41,4 @@
 @import
 //'pages/home/video',
 //'pages/home/services',
-  'pages/home/hero',
-  'pages/home/portfolio',
-  'pages/home/blog';
+  'pages/home/hero';
