@@ -25,6 +25,7 @@
 
   .blog-news {
     display: flex;
+    flex-wrap: wrap;
     margin: 2em -16px;
 
     @include large {
@@ -42,7 +43,7 @@
 
   .news-item {
     background-color: $white;
-    flex-grow: 1;
+    flex: 1 1 320px;
     margin: 24px 26px;
 
     @include large {

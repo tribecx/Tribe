@@ -17,4 +17,22 @@
   @include small {
     padding: 10em 15px 4em;
   }
+
+  &.alt {
+    padding: 21em 0 13em;
+
+    @include medium {
+      padding: 17em 0 12em;
+    }
+
+    @include small {
+      padding: 17em 0 11em;
+    }
+
+    .title-jumbo {
+      color: $aqua;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
 }
