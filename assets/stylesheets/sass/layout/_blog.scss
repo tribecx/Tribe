@@ -4,6 +4,21 @@
   padding-top: 7.5em;
   text-align: center;
 
+  &.alt {
+    background: $concrete;
+    padding-bottom: 0;
+
+    .title-section {
+      font-family: $font-regular;
+      font-size: 3.2em;
+      text-align: center;
+    }
+
+    .link-btn {
+      margin: 1em 0 3em;
+    }
+  }
+
   @include small {
     padding-bottom: 4.5em;
     padding-top: 2.6em;
@@ -45,9 +60,11 @@
     background-color: $white;
     flex: 1 1 320px;
     margin: 24px 26px;
+    max-width: calc(33.333% - 52px);
 
     @include large {
       margin: 24px 16px;
+      max-width: none;
     }
 
     @include medium {

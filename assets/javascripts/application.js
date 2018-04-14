@@ -1,13 +1,30 @@
 $(document).ready(function() {
+	menu();
 	hamburger();
 	carousel();
 	catFilters();
 });
 
+function menu() {
+	$(window).scroll(function() {
+		var top = $('.trigger-header').offset().top - 112;
+
+		if ($(document).scrollTop() < top) {
+			$('.header').removeClass('alt');
+		} else {
+			$('.header').addClass('alt');
+		}
+	});
+}
+
 function hamburger() {
 	$(".hamburger").click(function(){
     $('.hamburger, .mobile-menu').toggleClass('active');
   });
+
+	$('.anchor').click(function() {
+		$('.hamburger, .mobile-menu').toggleClass('active');
+	});
 }
 
 function carousel() {

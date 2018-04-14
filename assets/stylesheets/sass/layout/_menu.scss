@@ -2,6 +2,7 @@
   float: right;
   margin: 35px 52px 0 0;
   max-width: 545px;
+  transition: all 0.5s ease;
   width: 70%;
 
   @include medium {
@@ -9,7 +10,7 @@
     clear: both;
     float: none;
     height: calc(100vh - 50px);
-    margin: 0;
+    margin: 0 !important;
     max-width: none;
     position: absolute;
     right: -34em;

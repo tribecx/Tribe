@@ -1,6 +1,7 @@
 .header {
-  border-top: solid 10px $aqua;
+  border-top: solid 8px $aqua;
   position: fixed;
+  transition: all 0.5s ease, background-color 0.2s ease;
   width: 100%;
   z-index: 9998;
 
@@ -14,12 +15,28 @@
   }
 
   .header-logo {
-    margin: 20px auto 0 23px;
+    height: 64px;
+    margin: 20px auto 20px 23px;
+    transition: all 0.5s ease;
 
     @include medium {
       float: left;
-      height: 32px;
-      margin: 9px auto 9px 10px;
+      height: 32px !important;
+      margin: 9px auto 9px 10px !important;
+    }
+  }
+
+  &.alt {
+    background: $nile;
+    border: none;
+
+    .header-logo {
+      height: 48px;
+      margin: 15px auto 15px 15px;
+    }
+
+    .menu {
+      margin: 20px 25px 0 0;
     }
   }
 

@@ -3,6 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Tribe | Digital Agency</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/stylesheets/css/main.css">
     <link rel="stylesheet" href="assets/stylesheets/css/owl.carousel.min.css">
@@ -19,13 +36,13 @@
         <a class="menu-link" href="portfolio.html">Portafolio</a>
         <a class="menu-link" href="we_are.html">Quienes somos</a>
         <a class="menu-link" href="blog.html">Blog</a>
-        <a class="menu-link alt" href="#contact">Contáctanos</a>
+        <a class="menu-link alt anchor" href="#contact">Contáctanos</a>
       </nav>
       <nav class="menu mobile-menu hidden show-on-md">
         <a class="menu-link" href="portfolio.html">Portafolio</a>
         <a class="menu-link" href="we_are.html">Quienes somos</a>
         <a class="menu-link" href="blog.html">Blog</a>
-        <a class="menu-link" href="#contact">Contáctanos</a>
+        <a class="menu-link anchor" href="#contact">Contáctanos</a>
       </nav>
       <div class="hamburger hidden show-on-md">
         <span class="line"></span>
@@ -75,7 +92,7 @@
         </div>
       </div>
     </div>
-    <section class="portfolio section">
+    <section class="portfolio section trigger-header">
       <div class="portfolio-head">
         <h2 class="title-section"><span class="hide-on-sm">Nuestro </span>portafolio</h2>
         <div class="portfolio-categories hide-on-sm">
@@ -231,11 +248,11 @@
               et dolore magna aliqua. Ut enim ad
               minim veniam,.</p>
             <p class="news-date">Hace 2 días / 20 de Marzo de 2017</p>
-            <a class="news-link" href="#">Ver más</a>
+            <a class="news-link" href="post.html">Ver más</a>
           </div>
         </div>
         <div class="news-item hide-on-sm">
-          <img class="news-image" src="https://source.unsplash.com/random/640x448" alt="post-image">
+          <img class="news-image" src="https://source.unsplash.com/random/641x448" alt="post-image">
           <div class="news-info">
             <h4 class="news-title">Nombre de la noticia</h4>
             <p class="news-excerpt">
@@ -245,11 +262,11 @@
               et dolore magna aliqua. Ut enim ad
               minim veniam,.</p>
             <p class="news-date">Hace 2 días / 20 de Marzo de 2017</p>
-            <a class="news-link" href="#">Ver más</a>
+            <a class="news-link" href="post.html">Ver más</a>
           </div>
         </div>
         <div class="news-item hide-on-md">
-          <img class="news-image" src="https://source.unsplash.com/random/640x448" alt="post-image">
+          <img class="news-image" src="https://source.unsplash.com/random/642x448" alt="post-image">
           <div class="news-info">
             <h4 class="news-title">Nombre de la noticia</h4>
             <p class="news-excerpt">
@@ -259,7 +276,7 @@
               et dolore magna aliqua. Ut enim ad
               minim veniam,.</p>
             <p class="news-date">Hace 2 días / 20 de Marzo de 2017</p>
-            <a class="news-link" href="#">Ver más</a>
+            <a class="news-link" href="post.html">Ver más</a>
           </div>
         </div>
       </div>
@@ -545,7 +562,8 @@
     </section>
 
     <section class="contact section" id="contact">
-      <div class="contact-wrapper">
+      <div class="contact-wrapper">    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
         <h3 class="title-strong">¡Queremos ser parte de tu historia!</h3>
         <form class="contact-form clearfix" action="assets/php/contact-send.php" method="post">
           <div class="contact-field large-field">
