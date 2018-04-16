@@ -3,17 +3,32 @@
   position: relative;
 
   .hero-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     max-height: 63vw;
     width: 100%;
 
     @include small {
       max-height: 100vh;
+
+      &.slide-1 {
+        background-position: 75% center;
+      }
+
+      &.slide-4 {
+        background-position: 80% center;
+      }
     }
 
     @for $i from 1 through 4 {
       &.slide-#{$i} {
-        background: url('../../images/hero/hero-slide-#{$i}.jpg') center/cover no-repeat;
+        background-image: url('../../images/hero/hero-slide-#{$i}.jpg');
+
+        @include medium {
+          background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%), url('../../images/hero/hero-slide-#{$i}.jpg');
+        }
       }
     }
   }
@@ -30,6 +45,12 @@
     transition: height 1s ease;
     width: 100%;
     z-index: 500;
+
+    @include small {
+      left: 6%;
+      padding-left: 15px;
+      width: 88%;
+    }
   }
 
   .hero-copy {
@@ -43,6 +64,10 @@
     &.active {
       left: 25px;
       transition-delay: 0.5s;
+
+      @include small {
+        left: 15px;
+      }
     }
   }
 
@@ -51,6 +76,10 @@
     font-size: 8em;
     line-height: 0.95em;
     margin: 0;
+
+    @include small {
+      font-size: 4em;
+    }
   }
 
   .hero-paragraph {
