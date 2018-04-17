@@ -11,7 +11,6 @@
 
   .shadow {
     background-color: $shadow;
-    cursor: pointer;
     min-height: 100%;
     left: 0;
     position: fixed;
@@ -23,7 +22,7 @@
   	background-color: $white;
   	display: inline-block;
     margin-bottom: 8vw;
-  	padding: 4.5em;
+  	padding: 5em 4.5em 4em;
   	position: relative;
   	top: 4vw;
   	width: 90%;
@@ -42,7 +41,6 @@
     .text-wrapper {
       color: $nile;
       font-family: $font-section;
-      margin-bottom: 3.5em;
       position: relative;
       text-align: left;
 
@@ -57,7 +55,7 @@
           vertical-align: bottom;
         }
 
-        .branding {
+        .area {
           display:inline-block;
           font-size: 2.4em;
           line-height: 0.8em;
@@ -105,13 +103,25 @@
       }
     }
 
-    .image-wrapper {
-      clear: both;
-      margin-top: 3em;
+    img:first-of-type, video:first-of-type {
+      margin-top: 2em;
+    }
 
-      .image {
-      	width: 100%;
-      }
+    .popup-video {
+      margin-bottom: 1em;
+    }
+
+    .popup-image, .popup-video {
+      width: 100%;
+    }
+  }
+
+  .link-btn.small {
+    margin-top: 2em;
+
+    @include small {
+      margin-top: 1em;
+      padding: 0 0.4em;
     }
   }
 }

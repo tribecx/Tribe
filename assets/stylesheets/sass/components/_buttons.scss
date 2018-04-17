@@ -35,6 +35,17 @@
       color: $white;
     }
   }
+
+  &.small {
+    line-height: 2em;
+    padding: 0 1em;
+    text-transform: none;
+
+    @include on-event {
+      background-color: $nile;
+      color: $white;
+    }
+  }
 }
 
 .contact-btn {
