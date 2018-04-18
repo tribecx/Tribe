@@ -33,6 +33,7 @@
 
     @include small {
       margin: 0;
+      min-height: calc(100vh - 50px);
       padding: 2.5em;
       top: 50px;
       width: 100%;

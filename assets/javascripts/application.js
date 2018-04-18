@@ -94,11 +94,21 @@ function catFilters() {
 }
 
 function openPopup(name) {
-	$('#popup-'+name).show();
+	$.ajax({
+		url: 'portfolio/' + name + '.html',
+		dataType: 'html'
+	}).then(function(html) {
+		$('.popup').html(html);
+	});
+
+	$('.popup').show();
 	$('body').css({'height':'100vh','overflow':'hidden'});
 }
 
 function closePopup(name) {
-	$('#popup-'+name).hide();
+	$('.popup').hide().empty();
+	$('.popup-video').each(function() {
+		$(this)[0].load();
+	});
 	$('body').css({'height':'auto','overflow':'visible'});
 }
