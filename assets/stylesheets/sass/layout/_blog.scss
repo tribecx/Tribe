@@ -61,6 +61,7 @@
     flex: 1 1 320px;
     margin: 24px 26px;
     max-width: calc(33.333% - 52px);
+    min-width: 0;
 
     @include large {
       margin: 24px 16px;
@@ -68,16 +69,27 @@
     }
 
     @include medium {
+      flex: 1 1 238px;
       margin: 20px 6px;
     }
 
     @include small {
+      flex: 1 1 212px;
+      margin: 0 6px 10px;
+    }
+
+    @include extra-small {
+      flex: 1 1 225px;
       margin: 0 0 10px;
     }
 
     @include on-event {
       background-color: $nile;
       color: $white;
+
+      .news-title {
+        color: $white;
+      }
 
       .news-excerpt {
         color: $white;
@@ -93,6 +105,7 @@
     }
 
     .news-image {
+      padding-top: 70%;
       width: 100%;
     }
 
@@ -105,13 +118,22 @@
     }
 
     .news-title {
+      color: $stone;
       font-size: 1em;
       font-weight: bold;
-      margin-bottom: 0.8em;
+      line-height: 1.4em;
+      margin: 0 0 0.8em;
+      overflow: hidden;
       text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 
       @include small {
         margin-bottom: 0.6em;
+      }
+
+      @include on-event {
+        color: $aqua;
       }
     }
 
@@ -120,6 +142,8 @@
       font-size: 0.7em;
       line-height: 1.2em;
       margin-bottom: 1.8em;
+      max-height: 6.1em;
+      overflow: hidden;
       text-align: left;
 
       @include small {
@@ -148,6 +172,30 @@
 
       @include small {
         font-size: 0.75em;
+      }
+    }
+  }
+
+  .blog-more {
+    cursor: pointer;
+  }
+}
+
+.news {
+  background: $concrete;
+}
+
+.main, .article {
+  .blog-news {
+    .news-item:nth-child(2) {
+      @include extra-small {
+        display: none;
+      }
+    }
+
+    .news-item:nth-child(3) {
+      @include large {
+        display: none;
       }
     }
   }
