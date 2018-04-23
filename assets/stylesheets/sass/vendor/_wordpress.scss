@@ -1,0 +1,16 @@
+.gallery-row {
+  display: inline-block;
+  height: auto !important;
+  width: 100% !important;
+
+  .gallery-group {
+    float: left;
+    height: auto !important;
+    width: 50% !important;
+
+    img {
+      height: auto !important;
+      width: 100% !important;
+    }
+  }
+}

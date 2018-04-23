@@ -31,6 +31,9 @@
 }
 
 .post-body {
+  display: block;
+  margin: auto;
+  max-width: 1366px;
   padding: 8em 14em 7em;
 
   @include large {
@@ -64,25 +67,40 @@
     text-align: center;
 
     p {
+      display: flex;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.8em;
+      justify-content: space-between;
       text-align: left;
-    }
-
-    img {
-      max-width: calc(100% - 20px);
 
       @include small {
-        width: 100%;
+        display: block;
+      }
+
+      img {
+        display: inline-block;
+        flex: 0 1 calc(50% - 10px);
+        height: auto;
+        margin: auto 0px;
+        width: calc(50% - 20px);
+
+        @include small {
+          margin: $margin 0;
+          width: 100%;
+        }
       }
     }
 
-    p, img, video, iframe {
+    p, img, video {
       margin: $margin/2 $margin $margin*2.5;
     }
 
     img, video, iframe {
       display: inline-block;
+    }
+
+    span[class^='embed'] {
+      margin-top: $margin*2.5;
     }
   }
 

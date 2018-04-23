@@ -96,7 +96,7 @@ function blog() {
 
 function mainPosts() {
 	$.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=3&orderby=date",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/tribedigitalagency.wordpress.com/posts?per_page=3&orderby=date",
   	dataType: 'json'
   }).then(function(posts) {
   	showPosts(posts);
@@ -105,7 +105,7 @@ function mainPosts() {
 
 function blogPosts() {
 	$.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=100&orderby=date",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/tribedigitalagency.wordpress.com/posts?per_page=100&orderby=date",
   	dataType: 'json'
   }).then(function(posts) {
   	howMany(posts);
@@ -116,14 +116,14 @@ function postPosts() {
 	var id = getUrlParameter('id');
 
   $.ajax({
-    url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts/"+id+"",
+    url: "https://public-api.wordpress.com/wp/v2/sites/tribedigitalagency.wordpress.com/posts/"+id+"",
     dataType: 'json'
   }).then(function(post) {
     drawPost(post);
   });
 
   $.ajax({
-    url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=3&orderby=date",
+    url: "https://public-api.wordpress.com/wp/v2/sites/tribedigitalagency.wordpress.com/posts?per_page=3&orderby=date",
     dataType: 'json'
   }).then(function(posts) {
     showPosts(posts);
@@ -233,6 +233,8 @@ function drawPost(post) {
   $('.post-title').html(title);
   $('.post-date').html(date);
   $('.post-content').html(content);
+
+	postLayout();
 }
 
 function dateConverter(date) {
@@ -264,6 +266,21 @@ function getUrlParameter(sParam) {
       return sParameterName[1] === undefined ? true : sParameterName[1];
     }
   }
+}
+
+function postLayout() {
+	var image = $('.post-content p img');
+	var embed = $('.post-content span[class^="embed"]');
+
+	$(image).each(function() {
+		if (!$(this).prev().is('img') && !$(this).next().is('img')) {
+			$(this).css({'display':'block','flex':'0 1 100%'});
+		}
+	});
+
+	if ($(embed).parent().is('p')) {
+		$(embed).parent().css('display','inline-block');
+	}
 }
 
 function smoothScroll() {
