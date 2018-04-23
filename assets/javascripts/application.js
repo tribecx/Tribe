@@ -4,6 +4,7 @@ $(document).ready(function() {
 	carousel();
 	blog();
 	smoothScroll();
+	mailer();
 });
 
 function menu() {
@@ -281,6 +282,46 @@ function postLayout() {
 	if ($(embed).parent().is('p')) {
 		$(embed).parent().css('display','inline-block');
 	}
+
+	if ($(image).parent().is('p')) {
+		$(image).parent().css('display','flex');
+	}
+}
+
+function mailer() {
+	var form = $('#contact-form');
+	var alert = $('.alert');
+
+	$(form).submit(function(e) {
+		e.preventDefault();
+
+		var formData = $(form).serialize();
+
+		$.ajax({
+			type: 'POST',
+			url: 'assets/php/contact.php',
+			data: formData
+		}).done(function(response) {
+			$(alert).removeClass('error');
+			$(alert).addClass('success');
+
+			$(alert).text(response);
+
+			$('#name').val('');
+			$('#company').val('');
+			$('#email').val('');
+			$('#message').val('');
+		}).fail(function(data) {
+			$(alert).removeClass('success');
+			$(alert).addClass('error');
+
+			if (data.responseText !== '') {
+				$(alert).text(data.responseText);
+			} else {
+				$(alert).text('Lo sentimos, ha ocurrido un error.');
+			}
+		});
+	});
 }
 
 function smoothScroll() {

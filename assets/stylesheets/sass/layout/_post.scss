@@ -67,7 +67,7 @@
     text-align: center;
 
     p {
-      display: flex;
+      display: block;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.8em;
       justify-content: space-between;
@@ -102,10 +102,5 @@
     span[class^='embed'] {
       margin-top: $margin*2.5;
     }
-  }
-
-  // Borrar después de pruebas
-  .temp-image {
-    background: $smoke;
   }
 }
