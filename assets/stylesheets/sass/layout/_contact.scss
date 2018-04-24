@@ -99,6 +99,16 @@
         margin: 5px 0 0;
       }
     }
+
+    &:invalid {
+      border-bottom: solid 2px $red;
+      box-shadow: none;
+
+      @include on-event {
+        border-bottom: solid 3px $red;
+        margin: 14px 0 0;
+      }
+    }
   }
 
   .contact-textarea {

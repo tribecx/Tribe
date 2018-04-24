@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$subject = "Alguien intenta contactarte en Tribe.cx";
 
 	$email_content = "Nombre: $name\n";
-	$email_content .= "Empresa: $company\n\n";
+	$email_content .= "Empresa: $company\n";
 	$email_content .= "Email: $email\n\n";
 	$email_content .= "Mensaje:\n$message\n";
 

@@ -299,13 +299,14 @@ function mailer() {
 
 		$.ajax({
 			type: 'POST',
-			url: 'assets/php/contact.php',
+			url: $(form).attr('action'),
 			data: formData
 		}).done(function(response) {
 			$(alert).removeClass('error');
 			$(alert).addClass('success');
 
 			$(alert).text(response);
+			alertMessage();
 
 			$('#name').val('');
 			$('#company').val('');
@@ -317,11 +318,21 @@ function mailer() {
 
 			if (data.responseText !== '') {
 				$(alert).text(data.responseText);
+				alertMessage();
 			} else {
 				$(alert).text('Lo sentimos, ha ocurrido un error.');
+				alertMessage();
 			}
 		});
 	});
+}
+
+function alertMessage() {
+	var alert = $('.alert');
+
+	$(alert).slideToggle(600, 'easeInOutCirc', function () {
+    $(this).delay(5000).slideToggle(600, 'easeInOutCirc');
+  });
 }
 
 function smoothScroll() {
