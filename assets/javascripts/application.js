@@ -143,7 +143,7 @@ function showPosts(posts) {
 		'<div class="news-item">'+
 			'<div class="news-image news-image'+i+'"></div>'+
 			'<div class="news-info">'+
-				'<a href="post.html?id='+id+'"><h4 class="news-title">'+title+'</h4></a>'+
+				'<a href="post.html?id='+id+'"><h4 class="news-title" title="'+title+'">'+title+'</h4></a>'+
 				'<p class="news-excerpt">'+content+'</p>'+
 				'<p class="news-date">'+date+'</p>'+
 				'<a class="news-link" href="post.html?id='+id+'">Ver más</a>'+
@@ -211,7 +211,7 @@ function drawBlog(posts, start, need) {
 		'<div class="news-item">'+
 			'<div class="news-image news-image'+i+'"></div>'+
 			'<div class="news-info">'+
-				'<a href="post.html?id='+id+'"><h4 class="news-title">'+title+'</h4></a>'+
+				'<a href="post.html?id='+id+'"><h4 class="news-title" title="'+title+'">'+title+'</h4></a>'+
 				'<p class="news-excerpt">'+content+'</p>'+
 				'<p class="news-date">'+date+'</p>'+
 				'<a class="news-link" href="post.html?id='+id+'">Ver más</a>'+
@@ -226,13 +226,32 @@ function drawBlog(posts, start, need) {
 
 function drawPost(post) {
 	var background = post.featured_media_url;
-  var title = post.title.rendered
+  var title = post.title.rendered;
   var date = dateConverter(post.date);
   var content = post.content.rendered;
+	var author = post.author;
+	var authors = [
+		{id: '130873702', name: 'Alan Gutiérrez'},
+		{id: '138194997', name: 'Ilse Polanco'},
+		{id: '138039769', name: 'José Luis Gaspar'},
+		{id: '138033409', name: 'Juan Pablo Castillo'},
+		{id: '138195523', name: 'Manuel Valdovinos'},
+		{id: '138038067', name: 'Omar Miranda'},
+		{id: '138144561', name: 'Rubí Nuñez'},
+	];
+
+	for (var i = 0; i < authors.length; i++) {
+		if (author == authors[i].id) {
+			author = authors[i].name;
+			break;
+		}
+	}
 
   $('.post-head').css('background-image','url("'+background+'")');
+	$('title').html('Tribe | ' + title);
   $('.post-title').html(title);
   $('.post-date').html(date);
+	$('.post-author').append(author);
   $('.post-content').html(content);
 
 	postLayout();

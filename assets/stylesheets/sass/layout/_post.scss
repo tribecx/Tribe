@@ -1,6 +1,7 @@
 .post-head {
+  background-attachment: fixed;
   background-color: $nile;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -54,12 +55,17 @@
 
   $margin: 10px;
 
-  .post-date {
+  .post-date, .post-author {
     color: $stone;
+    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6em;
     margin: 0;
     margin-left: $margin;
+  }
+
+  .post-author {
+    font-weight: bold;
   }
 
   .post-content {
@@ -101,6 +107,11 @@
 
     span[class^='embed'] {
       margin-top: $margin*2.5;
+    }
+
+    iframe {
+      height: auto;
+      width: auto;
     }
   }
 }
