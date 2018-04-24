@@ -68,21 +68,21 @@
     <section class="contact section" id="contact">
       <div class="contact-wrapper">
         <h3 class="title-strong">¡Queremos ser parte de tu historia!</h3>
-        <form class="contact-form clearfix" action="assets/php/contact-send.php" method="post">
+        <form class="contact-form clearfix" id="contact-form" action="assets/php/contact.php" method="POST">
           <div class="contact-field large-field">
             <label class="contact-label" for="name">Nombre</label>
-            <input class="contact-input" type="text" name="name">
+            <input class="contact-input" type="text" name="name" id="name" required>
           </div>
           <div class="contact-field medium-field">
             <label class="contact-label" for="company">Compañía</label>
-            <input class="contact-input" type="text" name="company">
+            <input class="contact-input" type="text" name="company" id="company">
           </div>
           <div class="contact-field medium-field">
             <label class="contact-label" for="email">Email</label>
-            <input class="contact-input" type="email" name="email">
+            <input class="contact-input" type="email" name="email" id="email" required>
           </div>
           <div class="contact-field large-field">
-            <textarea class="contact-textarea" name="message" placeholder="MENSAJE"></textarea>
+            <textarea class="contact-textarea" name="message" id="message" placeholder="MENSAJE"></textarea>
           </div>
           <input class="contact-submit" type="submit" name="submit" value="Enviar">
         </form>
@@ -90,11 +90,12 @@
           <a class="social-link facebook" href="https://www.facebook.com/TribeDigitalAgency/"></a>
           <a class="social-link instagram" href="https://www.instagram.com/tribe.cx/"></a>
           <a class="social-link behance" href="https://www.behance.net/contacto8b68"></a>
-          <a class="social-link vimeo" href="#"></a>
+          <a class="social-link vimeo" href="https://vimeo.com/tribedigitalagency"></a>
           <a class="social-link linkedin" href="https://www.linkedin.com/company/tribe-digital-agency/?trk=nav_account_sub_nav_company_admin"></a>
         </div>
       </div>
     </section>
+    <div class="alert"></div>
     <footer class="footer">
       <h4 class="footer-copyright">Tribe Digital Agency © 2018. Todos los derechos reservados</h4>
     </footer>

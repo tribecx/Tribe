@@ -1,3 +1,35 @@
+.post-body {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 1.6em 0 10px 10px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.2em;
+  }
+
+  h2 {
+    font-size: 2.4em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: 1.1em;
+  }
+}
+
 .gallery-row {
   display: inline-block;
   height: auto !important;

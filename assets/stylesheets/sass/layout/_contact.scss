@@ -37,6 +37,17 @@
     @include small {
       margin: 30px 0;
     }
+
+    &.submitted {
+      .contact-input:invalid {
+        border-bottom: solid 2px $red;
+
+        @include on-event {
+          border-bottom: solid 3px $red;
+          margin: 14px 0 0;
+        }
+      }
+    }
   }
 
   .contact-field {
@@ -80,6 +91,7 @@
   .contact-input {
     background-color: $nile;
     border-bottom: solid 2px $aqua;
+    box-shadow: none;
     color: $white;
     font-size: 1.4em;
     line-height: 1.8em;
@@ -97,16 +109,6 @@
 
       @include on-event {
         margin: 5px 0 0;
-      }
-    }
-
-    &:invalid {
-      border-bottom: solid 2px $red;
-      box-shadow: none;
-
-      @include on-event {
-        border-bottom: solid 3px $red;
-        margin: 14px 0 0;
       }
     }
   }

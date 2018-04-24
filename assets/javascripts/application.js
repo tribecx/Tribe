@@ -292,6 +292,10 @@ function mailer() {
 	var form = $('#contact-form');
 	var alert = $('.alert');
 
+	$('.contact-submit').click(function() {
+		$(form).addClass('submitted');
+	});
+
 	$(form).submit(function(e) {
 		e.preventDefault();
 
@@ -307,6 +311,7 @@ function mailer() {
 
 			$(alert).text(response);
 			alertMessage();
+			$(form).removeClass('submitted');
 
 			$('#name').val('');
 			$('#company').val('');
