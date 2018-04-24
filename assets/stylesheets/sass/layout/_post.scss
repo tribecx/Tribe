@@ -99,10 +99,12 @@
 
     p, img, video {
       margin: $margin/2 $margin $margin*2.5;
+      max-width: 100%;
     }
 
     img, video, iframe {
       display: inline-block;
+      max-width: 100%;
     }
 
     span[class^='embed'] {
@@ -110,8 +112,10 @@
     }
 
     iframe {
-      height: auto;
-      width: auto;
+      @include small {
+        height: auto;
+        width: auto;
+      }
     }
   }
 }
