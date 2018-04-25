@@ -11,16 +11,32 @@
     background: linear-gradient(180deg, rgba(26,64,82,0.9) 0%, rgba(26,64,82,0.5) 100%);
     display: inline-block;
     height: 100%;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding: 0 14em 0;
     width: 100%;
+
+    @include large {
+      padding: 0 10em;
+    }
+
+    @include medium {
+      padding: 0 6em;
+    }
+
+    @include small {
+      padding: 0 4em;
+    }
+
+    @include extra-small {
+      padding: 0 2em;
+    }
   }
 
   .post-title {
     color: $white;
     font-family: $font-title;
     font-size: 6em;
-    margin: 4.333em 0 2.833em;
+    margin: 4.333em auto 2.833em;
+    max-width: 1086px;
     text-align: center;
     text-transform: uppercase;
 
