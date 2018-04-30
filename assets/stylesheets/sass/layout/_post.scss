@@ -1,11 +1,13 @@
 .post-head {
   background-attachment: fixed;
   background-color: $nile;
-  background-position: center bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  transition: top 0.2s ease;
+  width: 100%;
 
   .post-shadow {
     background: linear-gradient(180deg, rgba(26,64,82,0.9) 0%, rgba(26,64,82,0.5) 100%);

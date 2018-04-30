@@ -92,7 +92,7 @@ function closePopup(name) {
 }
 
 function blog() {
-	$('body').hasClass('main') ? mainPosts()  : $('body').hasClass('news') ? blogPosts()  : $('body').hasClass('article') && postPosts()
+	$('body').hasClass('main') ? mainPosts()  : $('body').hasClass('news') ? blogPosts()  : $('body').hasClass('article') && (postPosts(), postParallax())
 }
 
 function mainPosts() {
@@ -232,7 +232,9 @@ function drawPost(post) {
 	var author = post.author;
 	var authors = [
 		{id: '130873702', name: 'Alan Gutiérrez'},
+		{id: '138042595', name: 'Alejandro Robles'},
 		{id: '138194997', name: 'Ilse Polanco'},
+		{id: '138046195', name: 'Irvin Rosas'},
 		{id: '138039769', name: 'José Luis Gaspar'},
 		{id: '138033409', name: 'Juan Pablo Castillo'},
 		{id: '138195523', name: 'Manuel Valdovinos'},
@@ -305,6 +307,39 @@ function postLayout() {
 	if ($(image).parent().is('p')) {
 		$(image).parent().css('display','flex');
 	}
+}
+
+function postParallax() {
+	var headerHeight = $('.header').innerHeight();
+	var initialTop = parseInt($('.post-title').css('margin-top'));
+	var initialBottom = parseInt($('.post-title').css('margin-bottom'));
+
+	$(window).scroll(function() {
+		var top = $('.trigger-header').offset().top - headerHeight;
+
+		if ($(document).scrollTop() < top) {
+			var marginTop = initialTop - ($(window).scrollTop()/1.5);
+			var marginBottom = initialBottom - ($(window).scrollTop()/1.5);
+
+			if (marginBottom < headerHeight) {
+				if (headerHeight > 78) {
+					headerHeight = 78;
+				}
+
+				$('.post-title').css({'margin-top':marginTop,'margin-bottom':headerHeight});
+			} else {
+				$('.post-title').css({'margin-top':marginTop,'margin-bottom':marginBottom});
+			}
+
+			$('.shadow').css('background','transparent');
+			$('.header').css('background-image','none');
+		} else {
+			var bgUrl = $('.post-head').css('background-image');
+
+			$('.shadow').css('background','rgba(26,64,82,0.5)');
+			$('.header').css('background-image',bgUrl);
+		}
+	});
 }
 
 function mailer() {
