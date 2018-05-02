@@ -237,6 +237,7 @@ function drawPost(post) {
 		{id: '138046195', name: 'Irvin Rosas'},
 		{id: '138039769', name: 'José Luis Gaspar'},
 		{id: '138033409', name: 'Juan Pablo Castillo'},
+		{id: '138302915', name: 'Leo Juárez'},
 		{id: '138195523', name: 'Manuel Valdovinos'},
 		{id: '138038067', name: 'Omar Miranda'},
 		{id: '138144561', name: 'Rubí Nuñez'},
