@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		exit;
 	}
 
-	$recipient = "alan.gutierrez@tribe.cx";
+	$recipient = "juanpablo@tribe.cx";
 
 	$subject = "Alguien intenta contactarte en Tribe.cx";
 
